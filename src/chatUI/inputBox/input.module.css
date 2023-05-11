@@ -1,0 +1,201 @@
+/* .inputBox {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 10vw;
+    align-items: center;
+     justify-content: flex-end; 
+    margin-top: 69.8vh;
+
+    height: 5vh;
+    width: 0;
+    border-top: 1px solid #e0e0e0;
+  }
+  @media (min-width: 768px) { /* adjust width at this breakpoint 
+    .inputBox {
+      width: 70%; reduce width to 70% of parent container 
+    }
+  }
+  
+  @media (min-width: 992px) { /* adjust width at this breakpoint 
+    .inputBox {
+      width: 50%; /* reduce width to 50% of parent container 
+    }
+  }
+  
+  .inputBox i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .inputBox input {
+
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    
+    border-radius: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .inputBox input::placeholder {
+    color: #bbb;
+  }
+  
+  .inputBox i:last-child {
+    margin-left: 10px;
+  }
+  
+  .inputBox img{
+    width: 38px;
+  } */
+
+
+  /* Input box */
+/* .inputBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+} */
+.inputBox {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  /* right: 10vw; */
+  align-items: center;
+   justify-content: flex-end; 
+  /* margin-top: 69.8vh; */
+
+  height: 70px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  right: 40px;
+  /* background-color: #f0f0f0; */
+  /* border-top: 1px solid #e0e0e0; */
+}
+
+/* Messages container */
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Individual message */
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  max-width: 80%;
+  border-radius: 10px;
+  position: relative;
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Sent message */
+.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  animation: fadeInRight 0.3s ease;
+}
+
+/* Received message */
+.received {
+  background-color: #fff;
+  align-self: flex-start;
+  animation: fadeInLeft 0.3s ease;
+}
+
+/* Input section
+.input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Input text box 
+.input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 25px;
+  outline: none;
+}
+
+/* Input icons 
+.input i {
+  font-size: 24px;
+  color: #919191;
+}
+
+/* Send and mic icon 
+.input img {
+  width: 38px;
+  /* margin-left: 10px;
+  cursor: pointer; 
+} 
+
+
+
+
+/* Animations */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.inputBox i {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.inputBox input {
+
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  
+  border-radius: 20px;
+  background-color: #f5f5f5;
+}
+
+.inputBox input::placeholder {
+  color: #bbb;
+}
+
+.inputBox i:last-child {
+  margin-left: 10px;
+}
+
+.inputBox img{
+  width: 38px;
+} 

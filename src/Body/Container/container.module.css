@@ -1,0 +1,30 @@
+
+
+
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.box {
+    height: 75vh;
+    width: 30vw;
+    background-color: #FCC8D1;
+    z-index: 1;
+    margin-top: 5vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -4px 7px 22px 0px rgba(209,77,114,1);
+    border-radius: 10px;
+
+}
